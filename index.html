@@ -56,6 +56,22 @@ html {height: 100vh;}
   cursor: url("cursor.png"), auto;
   
 }
+.light {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.25) 0%,
+    rgba(255,255,255,0.15) 20%,
+    rgba(255,255,255,0.05) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
 .fa {color: #fff}
 
   .container {
@@ -827,7 +843,7 @@ grid-template-columns: repeat(3, 1fr);
     <div class="badge" >
        <div class="title-section">
          
-          <h2 class="italianno-regular" style="font-size: 100px;"><span class="wave-text">Pukkis</span></h2>
+          <h2 class="italianno-regular" style="font-size: 150px;"><span class="wave-text">Pukkis</span></h2>
          
         </div>
 <img src="./badge.png" width="80">
@@ -870,7 +886,7 @@ grid-template-columns: repeat(3, 1fr);
           </div>
         </div>
         <div class="title-section">
-           <p style="color: #795548;">LO QUE ES EFÍMERO ES LO MÁS HERMOSO</p>
+           <p style="color: var(--text-main)">LO QUE ES EFÍMERO ES LO MÁS HERMOSO</p>
           <h2 class="italianno-regular"><span class="wave-text">Pukkis</span></h2>
          
         </div>
@@ -923,16 +939,11 @@ grid-template-columns: repeat(3, 1fr);
       <div class="tab-section" id="intro">
       <div class="post-section">
         <div class="post-text">
-          <h3 style="visibility: hidden">ABOUT ME</h3>
+          
           <p>¿Existe el destino predeterminado?</p><br>
           <p>Como un destino inevitable que no podemos cambiar ni desafiar.</p><br>
           <p>Si existe el Sol. Mi destino es que sin importar en qué momento nos encontremos, pasado presente o cualquier otro, me enamoraré de ti.</p><br>
-          <p style="visibility: hidden"><strong>Nacionalidad:</strong> Mexicana</p>
-          <p style="visibility: hidden"><strong>Cumpleaños:</strong> 12 de Junio</p>
-          <p style="visibility: hidden"><strong>Signo:</strong> Géminis</p>
-          <p style="visibility: hidden"><strong>Hobbies:</strong> ver Doramas, editar y dormir</p>
-          <p style="visibility: hidden"><strong>Experta en:</strong> hacer dramas</p>
-          <p style="visibility: hidden"><strong>Dorama favorito:</strong> See You in My 19th Life</p>
+          
         </div>
         <img
           src="https://u.cubeupload.com/ymLes/Hl8YYe.png"
@@ -946,9 +957,7 @@ grid-template-columns: repeat(3, 1fr);
       <div class="post-section">
         <div class="post-text">
           <h3 class="fade-in">ABOUT ME</h3>
-          <p>¿Existe el destino predeterminado?</p><br>
-          <p>Como un destino inevitable que no podemos cambiar ni desafiar.</p><br>
-          <p>Si existe el Sol. Mi destino es que sin importar en qué momento nos encontremos, pasado presente o cualquier otro, me enamoraré de ti.</p><br>
+         
           <p class="fade-in"><strong>Nacionalidad:</strong> Mexicana</p>
           <p class="fade-in"><strong>Cumpleaños:</strong> 12 de Junio</p>
           <p class="fade-in"><strong>Signo:</strong> Géminis</p>
@@ -1002,49 +1011,49 @@ grid-template-columns: repeat(3, 1fr);
        <div class="friends">
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/89sxASoy6z5G.png" width="50" height="50"/></div>
             <div class="name">China</div>
             <a class="profile-btn" href="https://xat.me/Ch1n4" target="_blank">Profile</a>
         </div>
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/89sxASoy6z5G.png" width="50" height="50"/></div>
             <div class="name">Kim</div>
             <a class="profile-btn" href="https://xat.me/xKim" target="_blank">Profile</a>
         </div>
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/89sxASoy6z5G.png" width="50" height="50"/></div>
             <div class="name">Barbie</div>
             <a class="profile-btn" href="https://xat.me/BarbieDesire" target="_blank">Profile</a>
         </div>
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/GUMuc4bVAJvG.png" width="50" height="50"/></div>
             <div class="name">Gato</div>
             <a class="profile-btn" href="https://xat.me/NightofKnights" target="_blank">Profile</a>
         </div>
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/GUMuc4bVAJvG.png" width="50" height="50"/></div>
             <div class="name">Valek</div>
             <a class="profile-btn" href="https://xat.me/Desinteres" target="_blank">Profile</a>
         </div>
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/GUMuc4bVAJvG.png" width="50" height="50"/></div>
             <div class="name">Keigo</div>
             <a class="profile-btn" href="https://xat.me/Keigo" target="_blank">Profile</a>
         </div>
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/GUMuc4bVAJvG.png" width="50" height="50"/></div>
             <div class="name">Dragon</div>
             <a class="profile-btn" href="https://xat.me/dragoon" target="_blank">Profile</a>
         </div>
 
         <div class="friend">
-            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="badge.png" width="40" height="40"/></div>
+            <div class="avatar" style="display: flex;  align-items: center; justify-content: center;"><img src="https://xatimg.com/image/GUMuc4bVAJvG.png" width="50" height="50"/></div>
             <div class="name">Kuro</div>
             <a class="profile-btn" href="https://xat.me/xRichtofen" target="_blank">Profile</a>
         </div>
@@ -1063,6 +1072,7 @@ grid-template-columns: repeat(3, 1fr);
     <img src="https://u.cubeupload.com/ymLes/MvGpLO.png" alt="">
     <img src="https://u.cubeupload.com/ymLes/jmnazX.png" alt="">
     <img src="https://u.cubeupload.com/ymLes/xLvAyv.png" alt="">
+    <img src="https://u.cubeupload.com/ymLes/S74DdL.png" alt="">
 
   </div>
 
@@ -1390,6 +1400,13 @@ document.addEventListener('keydown', function (e) {
     if (e.key === 'F12') {
         e.preventDefault();
     }
+});
+
+const light = document.querySelector('.light');
+
+document.addEventListener('mousemove', (e) => {
+  light.style.left = e.clientX + 'px';
+  light.style.top = e.clientY + 'px';
 });
 </script>
   </body>
