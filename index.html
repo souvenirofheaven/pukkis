@@ -52,7 +52,10 @@ html {height: 100vh;}
     display: flex;
     height: 100vh;
   transition: opacity 250ms ease-in;
-  overflow: hidden;
+  body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
   cursor: url("cursor.png"), auto;
   
 }
@@ -75,8 +78,9 @@ html {height: 100vh;}
 .fa {color: #fff}
 
   .container {
-    width: 480px;
-    margin: auto;
+    width: 100%;
+  max-width: 480px;
+  margin: auto;
     border-radius: 20px;
     overflow: hidden;
      background: var(--card-bg);
@@ -830,6 +834,10 @@ grid-template-columns: repeat(3, 1fr);
     background-color: #6fa0c7;
 }
 
+.title-big {
+  font-size: clamp(150px, 25vw, 150px);
+}
+
 /* Responsive ajustes */
 @media (max-width: 480px) {
     .avatar {
@@ -879,7 +887,7 @@ grid-template-columns: repeat(3, 1fr);
     <div class="badge" >
        <div class="title-section">
          
-          <h2 class="italianno-regular" style="font-size: 150px;"><span class="wave-text">Pukkis</span></h2>
+          <h2 class="italianno-regular title-big"><span class="wave-text">Pukkis</span></h2>
          
         </div>
 <img src="./badge.png" width="80">
