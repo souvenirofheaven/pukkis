@@ -837,6 +837,42 @@ grid-template-columns: repeat(3, 1fr);
         height: 75px;
     }
 }
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
+    height: auto;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .title-section h2 {
+    font-size: clamp(48px, 14vw, 90px);
+    text-align: center;
+  }
+
+  .search-section {
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .search-tag {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .spotify-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .audio-player {
+    width: 100%;
+    justify-content: center;
+  }
+}
     </style>
   </head>
   <body>
@@ -1402,12 +1438,7 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-const light = document.querySelector('.light');
 
-document.addEventListener('mousemove', (e) => {
-  light.style.left = e.clientX + 'px';
-  light.style.top = e.clientY + 'px';
-});
 </script>
   </body>
 </html>
